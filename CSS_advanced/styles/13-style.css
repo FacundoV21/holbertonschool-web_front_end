@@ -23,6 +23,9 @@ html {
     --line-height-base: 1.5;
     --line-height-big: 1.8;
     --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
 }
 body, a {
     color: var(--text-color);
@@ -37,8 +40,17 @@ h1, h2, h3, h4, h5, h6{
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
-a{
+a:link{
     text-decoration: none;
+}
+a:visited{
+    font-style: italic;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    background-color: var(--color-light-grey);
 }
 .visually-hidden{
     display: none;
@@ -48,4 +60,16 @@ a{
 }
 .card-category, .section-tagline{
     color: var(--color-primary);
+}
+.section-title{
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
+    margin: var(--section-title-margin);
+    color: var(--section-title-color);
+}
+.section-tagline{
+    font-family: var(--font-family-title);
+    transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
