@@ -180,7 +180,7 @@ ul.row{
 .social-link.svg{
     color: var(--text-color);
 }
-.card-services.card-title{
+.card-services .card-title{
     margin: 0;
 }
 .card-services a{
